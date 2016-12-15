@@ -7,7 +7,9 @@ Created on 21 mars 2012
 '''
 Custom settings for django_cups app
 '''
+
 from django.conf import settings
+
 
 CUPS_SERVERS = getattr(settings, 'CUPS_SERVERS', {'Local':'localhost'})
 

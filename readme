@@ -1,5 +1,7 @@
 
-to install it : 
+to install it :
+
+pip install pycups
 
 copy django_cups folder in your python path
 

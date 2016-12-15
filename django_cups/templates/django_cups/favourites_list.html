@@ -5,7 +5,7 @@
 		<img src="/media/imgs/printer.png" />
 		{{ favourite.printer.server_name }} {{ favourite.printer }}
 		<small>({{ favourite.printer.location }})</small></a>
-		<a href="{% url django_cups.views.delFavourite favourite.printer.id %}" class="printerdelfromfav">Remove</a>
+		<a href="{% url 'django_cups.views.delFavourite' favourite.printer.id %}" class="printerdelfromfav">Remove</a>
 		</li>
 	{% endfor %}
 	</ul>

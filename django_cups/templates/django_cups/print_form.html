@@ -1,12 +1,12 @@
 {% load i18n %}
 <div id="django_cups_tab">
 	<ul>
-		<li><a href="{% url django_cups.views.getFavouriteslist %}"><span>Favourites</span></a></li>
-		<li><a href="{% url django_cups.views.getPrinterslist %}"><span>Printers</span></a></li>
+		<li><a href="{% url 'getFavouriteslist' %}"><span>Favourites</span></a></li>
+		<li><a href="{% url 'getPrinterslist' %}"><span>Printers</span></a></li>
 	</ul>
-	
+
 </div>
-<a href="{% url django_cups.views.refreshPrinterslist %}" class="printerreload">Refresh the list of printers</a>
+<a href="{% url 'refreshPrinterslist' %}" class="printerreload">Refresh the list of printers</a>
 <script type="text/javascript">
 	django_cups.print_form.init_form();
 </script>
