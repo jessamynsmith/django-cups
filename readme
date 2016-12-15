@@ -17,5 +17,8 @@ CUPS_SERVERS = {'SERVER1':'localhost',
 
 In urls.py
 
-add the following in urlpatterns
-(r'^django_cups/', include('django_cups.urls')),
+from django.conf.urls import include, url
+from django_cups import urls as django_cups_urls
+
+# add the following in urlpatterns
+url(r'^django_cups/', include(django_cups_urls)),
